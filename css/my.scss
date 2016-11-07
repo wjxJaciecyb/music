@@ -1,0 +1,31 @@
+$device-width:$de-list:320px,360px,375px,412px,384px,414px,800px,640px,1600px,768px;
+$width:750px;
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: "iconfont","微软雅黑"!important;
+}
+img{
+    border: none;
+}
+
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+    background-size: auto;
+    
+}
+@each $w in $device-width{
+    @media screen and (min-width:#{$w}){
+        html{
+            font-size:100px * $w / $width;
+        }
+    }
+}

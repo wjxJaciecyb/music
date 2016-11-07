@@ -1,0 +1,333 @@
+* {
+  position: relative;
+}
+
+body {
+  background: url(../imgs/2.png);
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+#header {
+  overflow: hidden;
+  padding: 0.58rem 0.40rem 0.58rem 0.40rem;
+}
+
+#header .volume {
+  overflow: hidden;
+}
+
+#header .volume img.vi-left {
+  width: 0.6rem;
+  float: left;
+  margin-right: 0.12rem;
+}
+
+#header .volume #volume {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.7rem;
+  height: 0.1rem;
+  width: 5.15rem;
+  background: #62C6C7;
+}
+
+#header .volume #volume #v-i {
+  position: absolute;
+  right: -0.13rem;
+  top: -0.10rem;
+  width: 0.26rem;
+  height: 0.26rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#header .volume img.vi-right {
+  width: 0.7rem;
+  float: right;
+  margin-left: 0.06rem;
+}
+
+#center {
+  height: 6rem;
+}
+
+#center .f-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.3rem;
+  height: 5.3rem;
+}
+
+#center .s-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#center .t-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1.85rem;
+}
+
+#lists {
+  padding: 0.3rem 0.8rem;
+  overflow: hidden;
+  font-weight: bold;
+  color: #62C6C7;
+  height: 1.4rem;
+  position: relative;
+}
+
+#lists li span {
+  font-weight: normal;
+  height: 50%;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#lists li span:first-child {
+  font-size: 25px;
+}
+
+#pro {
+  padding: 0.3rem 0.8rem;
+}
+
+#pro #progress {
+  width: 5.75rem;
+  height: 0.1rem;
+  background: #253D3F;
+}
+
+#pro #progress #p-i {
+  position: absolute;
+  top: -0.1rem;
+  left: -0.13rem;
+  width: 0.26rem;
+  height: 0.26rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#pro #progress #p-p {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: #62C6C7;
+}
+
+#pro #current-time, #pro #duration {
+  float: left;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+#pro #duration {
+  float: right;
+}
+
+.vocie {
+  padding: 0.3rem 0.8rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.vocie #previous {
+  float: left;
+  width: 0.95rem;
+}
+
+.vocie #previous img {
+  top: 0.3rem;
+  width: 0.95rem;
+  float: left;
+  width: 0.81rem;
+}
+
+.vocie #play {
+  float: left;
+  margin-left: 0.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto 20%;
+  background: url(../imgs/play.png);
+  background-size: cover;
+}
+
+.vocie #next {
+  float: right;
+  width: 0.95rem;
+}
+
+.vocie #next img {
+  top: 0.3rem;
+  width: 0.95rem;
+  width: 0.81rem;
+  float: right;
+}
+
+#footer {
+  padding: 0.32rem 0.8rem;
+  margin-top: 0.1rem;
+}
+
+#footer img {
+  width: 0.4rem;
+}
+
+#footer .left {
+  float: left;
+}
+
+#footer .center {
+  position: absolute;
+  top: 0.05rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#footer .right {
+  float: right;
+}
+
+#active {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+#music {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background: #62C6C7;
+  z-index: 1;
+  padding: 0.2rem;
+  display: none;
+}
+
+#music #music-list .active {
+  background: url(../imgs/yin.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+#music #music-list .active span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#music #music-list li {
+  padding: 0.2rem;
+  z-index: 3;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#music #music-list li span {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+
+#music #music-list li span:first-child {
+  font-weight: bold;
+}
+
+#music #music-list li .yin {
+  float: right;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+}
+
+#music #music-list li .delete {
+  float: right;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.2rem;
+  height: 0.8rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#all {
+  overflow: hidden;
+  padding: 0.1rem;
+  width: 100%;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+}
+
+#all .every {
+  text-align: center;
+  padding: 0.2rem;
+  width: 33.33%;
+  display: block;
+  float: left;
+  color: slategray;
+  margin-bottom: 0.2rem;
+}
+
+#all .every:nth-of-type(2) {
+  color: #000;
+}
+
+#sou {
+  padding: 0.4rem;
+  z-index: 2;
+}
+
+#sou input {
+  width: 100%;
+  height: 0.5rem;
+  outline: none;
+  border: 0;
+  background: #cfcfff;
+  border-radius: 0.2rem;
+  padding-left: 0.3rem;
+}
+
+#sou #add {
+  width: 0.5rem;
+  float: right;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+#close {
+  height: 0.5rem;
+  color: #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  line-height: 0.5rem;
+  text-align: center;
+}

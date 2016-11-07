@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"/>
+		
+		<!-- Add to homescreen for Safari on Ios -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="todo">
+		<link rel="apple-touch-icon" href="1.jpg">
+		
+		
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="todo">
+		<meta name="theme-color" content="#2F3BA2">
+		<link rel="icon" sizes="192x192" href="1.jpg">
+		
+		
+		<title>播放器</title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<link rel="stylesheet" href="css/my.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/my.js"></script>
+		<script type="text/javascript" src="js/list.js"></script>
+	</head>
+	<body>
+		<div id="first">
+			<audio src="music/Maroon 5 - Sugar.mp3" id="audio"></audio>
+			<div id="header">
+				<div class="volume">
+					<img src="imgs/3.png" alt="" class="vi-left" id="meta"/>
+					<div class="vi-p" id="volume">
+						<div id="v-i"></div>
+					</div>
+					<img src="imgs/4.png" alt="" class="vi-right"/>
+				</div>
+			</div>
+			<!--center-->
+			<div id="center">
+				<img src="imgs/5.png" alt="" class="f-img"/>
+				<img src="imgs/6.png" alt="" class="s-img"/>
+				<img src="imgs/7.png" alt="" class="t-img"/>
+			</div>
+			<!--歌名-->
+			<ul id="lists">
+				<li>
+					歌名：<span></span>
+				<br />
+					作者：<span></span>
+				</li>		
+				
+			</ul>
+			<!--进度-->
+			<div id="pro">
+				<div id="progress">
+					<div id="p-p"></div>
+					<div id="p-i"></div>
+				</div>
+				<div id="current-time">0:00</div>
+				<div id="duration">3:59</div>
+			</div>
+			<!--音量-->
+			<div class="vocie">
+				
+				<div id="previous">
+					<img src="imgs/8.png" alt="" />
+				</div>
+				<div id="play">
+				</div>
+				<div id="next">
+					<img src="imgs/9.png" alt="" />
+				</div>
+			</div>
+			<!--footer-->
+			<div id="footer">
+				<img src="imgs/11.png" alt="" class="left"/>
+				<img src="imgs/12.png" alt="" class="center"/>
+				<img src="imgs/13.png" alt="" class="right"/>
+			</div>
+		</div>
+		
+		<!--列表-->
+		
+		
+		<div id="music">
+			<div id="sou">
+				<input type="text" />
+				<img src="imgs/tianjia.png" alt="" id="add"/>
+			</div>
+			<div id="all">
+				<span class="every">收藏列表</span>
+				<span class="every">播放列表(4)</span>
+				<span class="every">清空</span>
+			</div>
+			<div id="close">关闭</div>
+			<ul id="music-list">
+			
+			</ul>
+			
+				
+			<!--增加-->
+			<div data-v='{"name":"a","src":"Maroon 5 - Sugar.mp3","duration":"3:00"}'></div>
+		</div>
+		
+	
+		
+		
+	</body>
+</html>
