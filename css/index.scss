@@ -125,16 +125,17 @@ img{
 
 
 .vocie{
-     padding:0.3rem 0.8rem;
-     margin-top:0.3rem;
+//   padding:0.3rem 0.8rem;
+//   margin-top:0.3rem;
      overflow: hidden;
      position:relative;
      #previous{
          float:left;
-          width:0.95rem;
+//        width:0.95rem;
+          overflow: hidden;
          img{
               top:0.3rem;
-             width:0.95rem;
+//           width:0.95rem;
              float:left;
              width:0.81rem;
          }
@@ -145,16 +146,16 @@ img{
           margin-left:0.4rem;
           width:1.5rem;
           height:1.5rem;
-          margin:auto 20% ;
-          background: url(../imgs/play.png);
-          background-size:cover;
+          margin:auto 15% ;
+//        background: url(../imgs/play.png);
+//        background-size:cover;
      }
       #next{
          float:right;
-          width:0.95rem;
+//        width:0.95rem;
          img{
              top:0.3rem;
-             width:0.95rem;
+//           width:0.95rem;
              width:0.81rem;
              float:right;
          }
